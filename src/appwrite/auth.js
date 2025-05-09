@@ -1,4 +1,3 @@
-/* eslint-disable no-useless-catch */
 import conf from "../conf/conf.js";
 import { Client, Account, ID } from "appwrite";
 
@@ -28,6 +27,7 @@ export class AuthService {
         return userAccount;
       }
     } catch (error) {
+      console.error("Error in createAccount:", error);
       throw error;
     }
   }
@@ -36,6 +36,7 @@ export class AuthService {
     try {
       return await this.account.createEmailPasswordSession(email, password);
     } catch (error) {
+      console.error("Error in Login:", error);
       throw error;
     }
   }

@@ -11,6 +11,7 @@ import Button from "./Button";
 import PostForm from "./post-form/PostForm";
 import PostCard from "./PostCard";
 import AuthLayout from "./AuthLayout";
+import AppLayout from "./AppLayout";
 import Input from "./Input";
 
 export {
@@ -28,4 +29,5 @@ export {
   AuthLayout,
   Input,
   Select,
+  AppLayout,
 };
